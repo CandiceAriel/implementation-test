@@ -1,0 +1,37 @@
+@import './elements/fonts';
+
+*{
+  font-family: 'Nunito Sans', sans-serif !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.text__bold{
+  font-weight: 900;
+}
+
+.home{
+  &__wrapper{
+    margin: 26px 90px;
+    display: grid;
+    gap: 25px;
+  }
+}
+
+.card{
+  &__wrapper{
+    max-width: 537px;
+    padding: 17px;
+    background-color: #216EFB;
+    grid-row: 1;
+    border-radius: 6px;
+    color: #FFFFFF;
+  }
+}
