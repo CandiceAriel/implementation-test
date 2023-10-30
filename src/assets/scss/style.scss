@@ -32,13 +32,18 @@ body {
 
 .card{
   &__wrapper{
-    //width: 537px;
+    width: 537px;
     max-width: 537px;
     padding: 17px;
     background-color: #216EFB;
+    filter: drop-shadow(0px 9px 9px rgba(25,81,185,0.36 ));
     grid-row: 1;
     border-radius: 6px;
     color: #FFFFFF;
+
+    &:first-child{
+      margin-right: 25px;
+    }
   }
 
   &__top{
@@ -68,7 +73,7 @@ body {
       border-radius: 3px;
       background-color: #1F5ED1;
       padding: 2px 6px;
-      margin-left: 174px;
+      margin-left: auto;
   
       span{
         font-size: 13px;
@@ -92,26 +97,47 @@ body {
       line-height: 31px;
     }
 
-    &-annualized{
-      &__container{
-        grid-row: 1;
-        margin-right: 123px;
-        margin-bottom: 27.5px;
-      }
-     
-    }
+    &__button-submit{
+      max-width: 147px;
+      height: 49px;
+      background: #FFB909;
+      border-radius: 9px;
+      padding: 0px 36px 0px 32px;
+      text-align: center;
+      vertical-align: middle;
+      border: none;
+      grid-column: 3;
 
-    &-duration{
-      &__container{
-        grid-row: 1;
+      span{
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 30px;
+        font-style: normal;
+        text-align: left;
+        color: #ffffff;
       }
-      
     }
+  }
 
-    &-cap{
-      p{
-        margin: 0px;
-        line-height: 18px;
-      }
+  .card-detail-annualized{
+    &__container{
+      grid-row: 1;
+      margin-right: 123px;
+      margin-bottom: 27.5px;
+    }
+  }
+
+  .card-detail-duration{
+    &__container{
+      grid-row: 1;
+    }
+  }
+
+  .card-detail-cap{
+    grid-column: 1;
+
+    p{
+      margin: 0px;
+      line-height: 18px;
     }
   }

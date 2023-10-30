@@ -21,7 +21,9 @@
         <p class='text_normal'>1,000,000 / 1,000,000 <span class='text_ext-bold'>BTC</span></p>
         <div></div>
       </div>
-      
+      <button class='card-detail__button-submit'>
+        <span>Subscribe</span>
+      </button>
     </div>
   </div>
 </template>
