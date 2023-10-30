@@ -13,8 +13,13 @@ body {
   margin: 0px;
 }
 
-.text__bold{
-  font-weight: 900;
+.text{
+  &_normal{
+    font-weight: 300;
+  }
+  &_ext-bold{
+    font-weight: 900;
+  }
 }
 
 .home{
@@ -27,6 +32,7 @@ body {
 
 .card{
   &__wrapper{
+    //width: 537px;
     max-width: 537px;
     padding: 17px;
     background-color: #216EFB;
@@ -34,4 +40,78 @@ body {
     border-radius: 6px;
     color: #FFFFFF;
   }
+
+  &__top{
+    border-bottom: #1F5ED1 1px solid;
+    display: flex;
+    align-items: center;
+    margin-bottom: 23.5px;
+  }
 }
+  .card-currency{
+    &__wrapper{
+      display: flex;
+      align-items:center;
+      font-size: 23px;
+      line-height: 46px;
+
+      img{
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .card-time{
+    &__wrapper{
+      height: 21.9px;
+      width: 145px;
+      border-radius: 3px;
+      background-color: #1F5ED1;
+      padding: 2px 6px;
+      margin-left: 174px;
+  
+      span{
+        font-size: 13px;
+        line-height: 18px;
+      }    
+    }
+  }
+
+  .card-detail{
+    &__wrapper{
+      display: grid;
+    }
+
+    &__title{
+      font-size: 14px;
+      line-height: 31px;
+    }
+
+    &__info{
+      font-size: 29px;
+      line-height: 31px;
+    }
+
+    &-annualized{
+      &__container{
+        grid-row: 1;
+        margin-right: 123px;
+        margin-bottom: 27.5px;
+      }
+     
+    }
+
+    &-duration{
+      &__container{
+        grid-row: 1;
+      }
+      
+    }
+
+    &-cap{
+      p{
+        margin: 0px;
+        line-height: 18px;
+      }
+    }
+  }

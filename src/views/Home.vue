@@ -1,17 +1,17 @@
 <template>
   <div class="home__wrapper">
-    <CardComponent msg="Welcome to Your Vue.js App"/>
-    <CardComponent msg="Welcome to Your Vue.js App"/>
+    <CurrencyCard currency="BTC"/>
+    <CurrencyCard currency="ETH"/>
   </div>
 </template>
 
 <script>
-import CardComponent from '../components/Card.vue';
+import CurrencyCard from '../components/Card.vue';
 
 export default {
   name: 'ViewHome',
   components: {
-    CardComponent
+    CurrencyCard
   }
 }
 </script>
