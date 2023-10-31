@@ -1,27 +1,27 @@
 <template>
   <div class="card__wrapper">
-    <div class="card__top">
-      <div class='card-currency__wrapper'>
+    <div class="card card__header">
+      <div class='card__header-currency'>
         <img src=".././assets/images/bitcoin_logo.svg" width="26" height="26">
-        <span class='text_ext-bold'>{{ currency }}</span>-A88888
+        <span class='text--ext-bold'>{{ currency }}</span>-A88888
       </div>
-      <div class='card-time__wrapper'>
-        <span>Starts in <span class='text_ext-bold'>6d 10h 38m</span></span>
+      <div class='status__time status__time--primary'>
+        <span>Starts in <span class='text--ext-bold'>{{startTimeDays}}d {{startTimeHours}}h {{startTimeMinutes}}m</span></span>
       </div>
     </div>
-    <div class= 'card-detail__wrapper'>
-      <div class='card-detail-annualized__container'>
-        <span class='card-detail-annualized card-detail__title text_ext-bold'>Annualized<br><span class='card-detail__info text_ext-bold'>~100.00%</span></span>
+    <div class= 'card card__content'>
+      <div class='card__annualized'>
+        <span class='content__title text--ext-bold'>Annualized<br><span class='content__info text--ext-bold'>~100.00%</span></span>
       </div>
-      <div class='card-detail-duration__container'>
-        <span class='card-detail-duration card-detail__title text_ext-bold'>30Feb20 - 30Jul20<br><span class='card-detail__info text_ext-bold'>88 Days</span></span>
+      <div class='card__duration'>
+        <span class='content__title text--ext-bold'>30Feb20 - 30Jul20<br><span class='content__info text--ext-bold'>88 Days</span></span>
       </div>
-      <div class='card-detail-cap card-detail-cap__container'>
-        <p class='card-detail__title text_ext-bold'>Current / Cap</p>
-        <p class='text_normal'>1,000,000 / 1,000,000 <span class='text_ext-bold'>BTC</span></p>
+      <div class='card__cap'>
+        <p class='content__title text--ext-bold'>Current / Cap</p>
+        <p class='text_normal'>1,000,000 / 1,000,000 <span class='text--ext-bold'>{{ currency }}</span></p>
         <div></div>
       </div>
-      <button class='card-detail__button-submit'>
+      <button class='btn btn__submit btn__submit--big'>
         <span>Subscribe</span>
       </button>
     </div>
@@ -32,7 +32,10 @@
 export default {
   name: 'CurrencyCard',
   props: {
-    currency: String
+    currency: String,
+    startTimeDays: String,
+    startTimeHours: String,
+    startTimeMinutes: String,
   }
 }
 </script>
