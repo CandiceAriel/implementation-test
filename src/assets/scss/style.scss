@@ -270,7 +270,6 @@ body {
       font-size: 14px;
       line-height: 19px;
       font-weight: 700;
-      padding-top: 14px;
     }
 
     th:first-of-type {
@@ -286,30 +285,26 @@ body {
       border-bottom-right-radius: 6px;
     }
 
-    tr{
-      position: relative;
-      width: 100%;
-      display: table-row;
 
-      &::after{
-        position: absolute;
-        bottom: 0;
-        height: 1px;
-        content: '';
-        background-color: #D5D5D5;
-      }
-    }
 
     &-row{
       font-size: 12px;
       line-height: 16px;
       // border-bottom: thin solid #D5D5D5;
       position: relative;
+      width: 100%;
+      display: table-row;
+
 
       &::after{
         left: 15px;
         width: calc(100% - 30px);
         margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+        height: 1px;
+        content: '';
+        background-color: #D5D5D5;
       }
 
       td{
@@ -332,10 +327,32 @@ body {
   }
 }
 
+.dropdown{
+  &--small{
+    //width: 54px;
+    height: 39px;
+    padding: 9px 11px 12px 13px;
+    background:#F2F2F2;
+    border: thin solid #D5D5D5;
+    border-radius: 6px;
+    margin-bottom: 11px;
+    float: right;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
 .icon{
   &__triangle-down{
     width: 5px;
     height: 4px;
+
+    &--dropdown{
+      margin-top: 7px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    }
   }
 }
 

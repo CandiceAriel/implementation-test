@@ -1,12 +1,16 @@
 <template>
   <div class="annualized__wrapper">
+    <div class="dropdown dropdown--small">
+      <span>All</span>
+      <img class="icon__triangle-down--dropdown" src=".././assets/images/triangle-down-black.svg">
+    </div>
     <table class="annualized annualized__table">
       <thead>
         <tr class="annualized annualized__table-head">
           <th class="text--algn-left">Block</th>
-          <th class="text--algn-right"><span>Annualized</span></th>
-          <th class="text--algn-right"><span>Date</span></th>
-          <th class="text--algn-right"><span>Duration</span></th>
+          <th class="text--algn-right"><span>Annualized</span> <img class="icon__triangle-down" src=".././assets/images/triangle-down.svg"></th>
+          <th class="text--algn-right"><span>Date</span> <img class="icon__triangle-down" src=".././assets/images/triangle-down.svg"></th>
+          <th class="text--algn-right"><span>Duration</span> <img class="icon__triangle-down" src=".././assets/images/triangle-down.svg"></th>
           <th class="text--algn-left"><span>Current/Cap</span></th>
           <th class="text--algn-left"><span></span></th>
           <th><span>Status</span></th>
@@ -26,13 +30,13 @@
           </td>
           <td class="text--algn-right">
             <span class="text--ext-bold">{{ item.annualized }}</span>
-            <img class="icon__triangle-down" src=".././assets/images/triangle-down.svg">
+           
           </td>
           <td class="text--algn-right">
-            <span>{{ item.date }}</span><img class="icon__triangle-down" src=".././assets/images/triangle-down.svg">
+            <span>{{ item.date }}</span>
           </td>
           <td class="text--algn-right">
-            <span>{{ item.duration }}</span><img class="icon__triangle-down" src=".././assets/images/triangle-down.svg">
+            <span>{{ item.duration }}</span>
           </td>
           <td class="text--algn-left">
             <span
