@@ -255,6 +255,7 @@ body {
 .annualized {
   &__wrapper {
     grid-column: 1/ span 12;
+    max-width: 1099px;
   }
 
   &__table {
