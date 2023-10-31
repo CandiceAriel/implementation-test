@@ -39,12 +39,13 @@ body {
   &__wrapper {
     margin: 26px 90px;
     display: grid;
+    grid-template-columns: repeat(12, 1fr);
   }
 }
 
 .card {
   &__wrapper {
-    width: 537px;
+    min-width: 537px;
     max-width: 537px;
     padding: 17px;
     background-color: #216EFB;
@@ -62,6 +63,11 @@ body {
 
     &:first-child {
       margin-right: 25px;
+      grid-column: 1/span 6;
+    }
+
+    &-right{
+      grid-column: 7/ span 6;
     }
   }
 
@@ -248,7 +254,7 @@ body {
 
 .annualized {
   &__wrapper {
-    grid-column: 1/ span 2;
+    grid-column: 1/ span 12;
   }
 
   &__table {

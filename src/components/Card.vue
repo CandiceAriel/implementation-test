@@ -1,5 +1,5 @@
 <template>
-  <div class="card__wrapper">
+  <div class="card__wrapper" :class="{'card__wrapper-right': isRight}">
     <div class="card card__header">
       <div class='card__header-currency'>
         <img src=".././assets/images/bitcoin_logo.svg" width="26" height="26">
@@ -39,6 +39,11 @@ export default {
     startTimeDays: String,
     startTimeHours: String,
     startTimeMinutes: String,
+    isRight: Boolean
+  },
+  data(){
+    return {
+    }
   }
 }
 </script>
