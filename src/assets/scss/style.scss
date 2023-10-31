@@ -310,6 +310,19 @@ body {
       td{
         padding: 20.7px 19.7px;
       }
+
+      &:last-of-type{
+        &::after{
+          left: 15px;
+        width: calc(100% - 30px);
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+        height: 1px;
+        content: '';
+        background: none;
+        }
+      }
     }
     
   }
