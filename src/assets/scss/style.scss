@@ -158,6 +158,35 @@ body {
 
 }
 
+.progress-bar{
+  &__wrapper{
+      border-radius: 30px;
+      background-color: #1F5ED1;
+      margin-top: 9px;
+      &--gray{
+        background: #F2F2F2;
+      }
+  }
+
+  &__bar{
+    height: 9px;
+    border-radius: 30px;
+    transition: 0.4s linear;
+    background-color: #FFB909;
+    width: 50%;
+
+    &--small{
+      height: 5px;
+    }
+  }
+
+  &--moved{
+    background-color: #FFB909;
+    animation: progress 5s infinite;
+
+  }
+}
+
 .btn {
   &__submit {
     
@@ -174,6 +203,7 @@ body {
       height: 49px;
       border-radius: 9px;
       padding: 0px 36px 0px 32px;
+      margin-top: 4.5px;
       grid-column: 3;
 
       span {
@@ -256,10 +286,31 @@ body {
       border-bottom-right-radius: 6px;
     }
 
+    tr{
+      position: relative;
+      width: 100%;
+      display: table-row;
+
+      &::after{
+        position: absolute;
+        bottom: 0;
+        height: 1px;
+        content: '';
+        background-color: #D5D5D5;
+      }
+    }
+
     &-row{
       font-size: 12px;
       line-height: 16px;
-      border-bottom: 1px solid #D5D5D5;
+      // border-bottom: thin solid #D5D5D5;
+      position: relative;
+
+      &::after{
+        left: 15px;
+        width: calc(100% - 30px);
+        margin: 0 auto;
+      }
 
       td{
         padding: 20.7px 19.7px;
@@ -272,8 +323,19 @@ body {
     background: #216EFB;
   } 
 
-  &__table-content{
-    
+  &__coin-symbol{
+    height: 15px;
+    width: 15px;
+    margin-right: 5.4px;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+.icon{
+  &__triangle-down{
+    width: 5px;
+    height: 4px;
   }
 }
 

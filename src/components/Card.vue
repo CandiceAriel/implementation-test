@@ -19,7 +19,10 @@
       <div class='card__cap'>
         <p class='content__title text--ext-bold'>Current / Cap</p>
         <p class='text_normal'>1,000,000 / 1,000,000 <span class='text--ext-bold'>{{ currency }}</span></p>
-        <div></div>
+        <div class="progress-bar__wrapper progress-bar__moved">
+          <div class="progress-bar__bar"></div>
+          <div class="loader" style="--n: 1; --f: 0;"></div>
+        </div>
       </div>
       <button class='btn btn__submit btn__submit--big'>
         <span>Subscribe</span>
